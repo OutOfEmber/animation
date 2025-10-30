@@ -1,0 +1,27 @@
+.burger-container{
+    position: absolute;
+    top:middle;
+    left:40%;
+    background-color: rgb(243, 112, 112);
+    width: 500px;
+    height: 550px;
+    transition: all 0.5s ease;
+}
+.bun-top{
+    position: absolute;
+    background-color: rgb(243, 242, 175);
+    top:3;
+    left:1;
+    width:500px;
+    height:100px;
+    border-radius: 100px 100px 0px  0px ;
+}
+.bun-dots:nth-child(1){
+    position: absolute;
+    top:3;
+    left:1;
+    background-color: rgb(177, 176, 126);
+    width:10px;
+    height: 10px;
+    border-radius: 100px;
+}
