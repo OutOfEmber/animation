@@ -1,6 +1,6 @@
 .burger-container{
     position: absolute;
-    top:middle;
+    top:300px;
     left:40%;
     background-color: rgb(243, 112, 112);
     width: 500px;
@@ -9,19 +9,306 @@
 }
 .bun-top{
     position: absolute;
-    background-color: rgb(243, 242, 175);
+    background-color: rgb(247, 225, 176);
     top:3;
     left:1;
     width:500px;
     height:100px;
     border-radius: 100px 100px 0px  0px ;
 }
+.eye-left{
+    position: absolute;
+    top:20px;
+    left:175px;
+    background-color: rgb(255, 255, 255);
+    width:30px;
+    height: 30px;
+    border-radius: 100px;
+}
+.pupil-left{
+    position: absolute;
+    top:5px;
+    left:5px;
+    background-color: rgb(0, 0, 0);
+    width:20px;
+    height: 20px;
+    border-radius: 100px;
+}
+.blink1-left{
+    position: absolute;
+    top:2px;
+    left:10px;
+    background-color: rgb(255, 255, 255);
+    width:10px;
+    height: 10px;
+    border-radius: 100px;
+}
+.blink2-left{
+    position: absolute;
+    top:11px;
+    left:1px;
+    background-color: rgb(255, 255, 255);
+    width:7px;
+    height: 7px;
+    border-radius: 100px;
+}
+.left-cheek{
+   position: absolute;
+    top:55px;
+    left:175px;
+    background-color: rgb(248, 142, 213);
+    width:30px;
+    height: 10px;
+    border-radius: 100px; 
+}
+.mouth{
+    position: absolute;
+    top:45px;
+    left:45%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    width: 20px;
+    height: 30px;
+    border: 5px solid black;
+    border-radius: 50%;
+}
+.mouth-rectangle{
+    position: absolute;
+    background-color: rgb(247, 225, 176);
+    width: 40px;
+    height: 35px;
+    top:35px;
+    left:44%;
+}
+.eye-right{
+    position: absolute;
+    top:20px;
+    right:195px;
+    background-color: rgb(255, 255, 255);
+    width:30px;
+    height: 30px;
+    border-radius: 100px;
+}
+.pupil-right{
+    position: absolute;
+    top:5px;
+    left:5px;
+    background-color: rgb(0, 0, 0);
+    width:20px;
+    height: 20px;
+    border-radius: 100px;
+}
+.blink1-right{
+    position: absolute;
+    top:2px;
+    left:10px;
+    background-color: rgb(255, 255, 255);
+    width:10px;
+    height: 10px;
+    border-radius: 100px;
+}
+.blink2-right{
+    position: absolute;
+    top:11px;
+    left:1px;
+    background-color: rgb(255, 255, 255);
+    width:7px;
+    height: 7px;
+    border-radius: 100px;
+}
+.right-cheek{
+   position: absolute;
+    top:55px;
+    right:195px;
+    background-color: rgb(248, 142, 213);
+    width:30px;
+    height: 10px;
+    border-radius: 100px; 
+}
 .bun-dots:nth-child(1){
     position: absolute;
-    top:3;
-    left:1;
+    top:30px;
+    left:60px;
     background-color: rgb(177, 176, 126);
     width:10px;
     height: 10px;
     border-radius: 100px;
+}
+.bun-dots:nth-child(2){
+    position: absolute;
+    top:30px;
+    left:100px;
+    background-color: rgb(177, 176, 126);
+    width:10px;
+    height: 10px;
+    border-radius: 100px;
+}
+.bun-dots:nth-child(3){
+    position: absolute;
+    top:60px;
+    left:70px;
+    background-color: rgb(177, 176, 126);
+    width:10px;
+    height: 10px;
+    border-radius: 100px;
+}
+.bun-dots1{
+    position: absolute;
+    top:30px;
+    right:60px;
+    background-color: rgb(177, 176, 126);
+    width:10px;
+    height: 10px;
+    border-radius: 100px;
+}
+.bun-dots2{
+    position: absolute;
+    top:30px;
+    right:100px;
+    background-color: rgb(177, 176, 126);
+    width:10px;
+    height: 10px;
+    border-radius: 100px;
+}
+.bun-dots3{
+    position: absolute;
+    top:60px;
+    right:70px;
+    background-color: rgb(177, 176, 126);
+    width:10px;
+    height: 10px;
+    border-radius: 100px;
+}
+.cheese{
+    width:500px;
+    height:5px;
+    background-color: rgb(245, 245, 128);
+    position: absolute;
+    top:100px;
+}
+.cheese-triangle{
+    width:0px;
+    height:0px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 60px solid rgb(245, 245, 128);    
+    position: absolute;
+    top:2px;
+    left:190px;
+}
+.c-smudge-blesk01{
+    position: absolute;
+    left: -35px;
+    top:-55px;
+    width:5px;
+    height:10px;
+    background-color:rgb(251, 255, 198);
+    border-radius: 10px;
+    rotate:-40deg;
+}
+.c-smudge-blesk02{
+    position: absolute;
+    left: -17px;
+    top:-45px;
+    width:5px;
+    height:30px;
+    background-color:rgb(251, 255, 198);
+    border-radius: 10px;
+    rotate:-40deg;
+}
+.cheese-smudge1{
+    position: absolute;
+    left: 10px;
+    width:30px;
+    height:60px;
+    background-color:rgb(245, 245, 128);
+    border-radius: 0px 0px 10px 10px;
+}
+.c-smudge-blesk11{
+    position: absolute;
+    left: 2px;
+    top:5px;
+    width:5px;
+    height:10px;
+    background-color:rgb(251, 255, 198);
+    border-radius: 10px;
+}
+.c-smudge-blesk12{
+    position: absolute;
+    left: 2px;
+    top:20px;
+    width:5px;
+    height:30px;
+    background-color:rgb(251, 255, 198);
+    border-radius: 10px;
+}
+.cheese-smudge2{
+    position: absolute;
+    right: 15px;
+    width:30px;
+    height:40px;
+    background-color:rgb(245, 245, 128);
+    border-radius: 0px 0px 10px 10px;
+}
+.c-smudge-blesk21{
+    position: absolute;
+    left: 2px;
+    top:5px;
+    width:5px;
+    height:10px;
+    background-color:rgb(251, 255, 198);
+    border-radius: 10px;
+}
+.cheese-smudge3{
+    position: absolute;
+    right: 70px;
+    width:30px;
+    height:70px;
+    background-color:rgb(245, 245, 128);
+    border-radius: 0px 0px 10px 10px;
+}
+.c-smudge-blesk31{
+    position: absolute;
+    left: 2px;
+    top:5px;
+    width:5px;
+    height:30px;
+    background-color:rgb(251, 255, 198);
+    border-radius: 10px;
+}
+.cheese-smudge4{
+    position: absolute;
+    right: 150px;
+    width:30px;
+    height:30px;
+    background-color:rgb(245, 245, 128);
+    border-radius: 0px 0px 10px 10px;
+}
+.c-smudge-blesk41{
+    position: absolute;
+    left: 2px;
+    top:5px;
+    width:5px;
+    height:10px;
+    background-color:rgb(251, 255, 198);
+    border-radius: 10px;
+}
+.onion{
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    width: 70px;
+    height: 30px;
+    border: 5px solid rgb(128, 3, 117);
+    border-radius: 50%;
+    position: absolute;
+    top:85px;
+    left:15px;
+}
+.onionin{
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    width: 60px;
+    height: 20px;
+    border: 5px solid rgb(247, 228, 247);
+    border-radius: 50%;
 }
