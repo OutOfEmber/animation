@@ -2,10 +2,11 @@
     position: absolute;
     top:300px;
     left:40%;
-    background-color: rgb(243, 112, 112);
+    background-color: rgb(255, 255, 255);
     width: 500px;
     height: 550px;
     transition: all 0.5s ease;
+    animation: burgerJump 2s infinite;
 }
 .bun-top{
     position: absolute;
@@ -15,6 +16,7 @@
     width:500px;
     height:100px;
     border-radius: 100px 100px 0px  0px ;
+    animation: topBunFly 2s infinite;
 }
 .eye-left{
     position: absolute;
@@ -24,6 +26,7 @@
     width:30px;
     height: 30px;
     border-radius: 100px;
+    animation: blink 1s infinite;
 }
 .pupil-left{
     position: absolute;
@@ -33,6 +36,7 @@
     width:20px;
     height: 20px;
     border-radius: 100px;
+    animation: blink 1s infinite;
 }
 .blink1-left{
     position: absolute;
@@ -42,6 +46,7 @@
     width:10px;
     height: 10px;
     border-radius: 100px;
+    animation: blink 1s infinite;
 }
 .blink2-left{
     position: absolute;
@@ -51,6 +56,7 @@
     width:7px;
     height: 7px;
     border-radius: 100px;
+    animation: blink 1s infinite;
 }
 .left-cheek{
    position: absolute;
@@ -88,6 +94,7 @@
     width:30px;
     height: 30px;
     border-radius: 100px;
+    animation: blink 1s infinite;
 }
 .pupil-right{
     position: absolute;
@@ -97,6 +104,7 @@
     width:20px;
     height: 20px;
     border-radius: 100px;
+    animation: blink 1s infinite;
 }
 .blink1-right{
     position: absolute;
@@ -106,6 +114,7 @@
     width:10px;
     height: 10px;
     border-radius: 100px;
+    animation: blink 1s infinite;
 }
 .blink2-right{
     position: absolute;
@@ -115,6 +124,7 @@
     width:7px;
     height: 7px;
     border-radius: 100px;
+    animation: blink 1s infinite;
 }
 .right-cheek{
    position: absolute;
@@ -185,6 +195,7 @@
     background-color: rgb(245, 245, 128);
     position: absolute;
     top:100px;
+    animation: cheeseFly 2s infinite;
 }
 .cheese-triangle{
     width:0px;
@@ -297,18 +308,316 @@
     border-bottom-color: transparent;
     border-left-color: transparent;
     width: 70px;
-    height: 30px;
-    border: 5px solid rgb(128, 3, 117);
+    height: 70px;
+    border: 7px solid rgb(218, 3, 200);
     border-radius: 50%;
     position: absolute;
-    top:85px;
+    top:65px;
     left:15px;
+    animation: onionFly 2s infinite;
 }
 .onionin{
     border-bottom-color: transparent;
     border-left-color: transparent;
     width: 60px;
-    height: 20px;
+    height: 60px;
     border: 5px solid rgb(247, 228, 247);
     border-radius: 50%;
+}
+.tomato1{
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    width: 130px;
+    height: 80px;
+    border: 10px solid rgb(233, 9, 9);
+    border-radius: 50%;
+    background-color: rgb(250, 113, 113);
+    position: absolute;
+    top:60px;
+    left:50px;
+    animation: tomato1Fly 2s infinite;
+}
+.tomato2{
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    width: 130px;
+    height: 80px;
+    border: 10px solid rgb(233, 9, 9);
+    border-radius: 50%;
+    background-color: rgb(250, 113, 113);
+    position: absolute;
+    top:60px;
+    right:50px;
+    animation: tomato2Fly 2s infinite;
+}
+.lettuce{
+    position: absolute;
+    width:480px;
+    left:10px;
+    height:55px;
+    background-color: rgb(142, 230, 142);
+    top:100px;
+    animation: lettuceFly 2s infinite;
+}
+.l-points1{
+    position: absolute;
+    width:50px;
+    height:60px;
+    background-color: rgb(142, 230, 142);
+    border-radius: 0% 0% 50% 50%;
+    top:50px;
+}
+.l-points2{
+    position: absolute;
+    width:50px;
+    height:60px;
+    background-color: rgb(142, 230, 142);
+    border-radius: 0% 0% 50% 50%;
+    top:50px;
+    left:110px;
+}
+.l-points3{
+    position: absolute;
+    width:50px;
+    height:60px;
+    background-color: rgb(142, 230, 142);
+    border-radius: 0% 0% 50% 50%;
+    top:50px;
+    left:220px;
+}
+.l-points4{
+    position: absolute;
+    width:50px;
+    height:60px;
+    background-color: rgb(142, 230, 142);
+    border-radius: 0% 0% 50% 50%;
+    top:50px;
+    left:330px;
+}
+.l-points5{
+    position: absolute;
+    width:50px;
+    height:60px;
+    background-color: rgb(142, 230, 142);
+    border-radius: 0% 0% 50% 50%;
+    top:50px;
+    left:430px;
+}
+.patty{
+    width:500px;
+    height:130px;
+    background-color: brown;
+    position: absolute;
+    top:110px;
+    border-radius: 50px;
+    animation: pattyFly 2s infinite;
+}
+.ketchup{
+    position: absolute;
+    top:230px;
+    left:10px;
+    width:480px;
+    height:20px;
+    background-color: rgb(243, 42, 42);
+    border-radius: 50px 50px 0px 0px;
+    animation: ketchupFly 2s infinite;
+}
+.bun-bottom{
+    position: absolute;
+    background-color: rgb(247, 225, 176);
+    top:250px;
+    left:1;
+    width:500px;
+    height:100px;
+    border-radius: 0px 0px 100px 100px;
+    animation: bottomBunFly 2s infinite;
+}
+.k-smudge1{
+    position: absolute;
+    left: 30px;
+    width:30px;
+    height:60px;
+    background-color:rgb(243, 42, 42);
+    border-radius: 0px 0px 10px 10px;
+}
+.k-smudge-bl11{
+    position: absolute;
+    left: 4px;
+    top:5px;
+    width:5px;
+    height:10px;
+    background-color:rgb(243, 130, 130);
+    border-radius: 10px;
+}
+.k-smudge-bl12{
+    position: absolute;
+    left: 4px;
+    top:20px;
+    width:5px;
+    height:15px;
+    background-color:rgb(243, 130, 130);
+    border-radius: 10px;
+}
+.k-smudge2{
+    position: absolute;
+    left: 70px;
+    width:30px;
+    height:30px;
+    background-color:rgb(243, 42, 42);
+    border-radius: 0px 0px 10px 10px;
+}
+.k-smudge-bl21{
+    position: absolute;
+    left: 4px;
+    top:2px;
+    width:5px;
+    height:10px;
+    background-color:rgb(243, 130, 130);
+    border-radius: 10px;
+}
+.k-smudge-bl22{
+    position: absolute;
+    left: 4px;
+    top:20px;
+    width:5px;
+    height:5px;
+    background-color:rgb(243, 130, 130);
+    border-radius: 10px;
+}
+.shadow{
+    width:500px;
+    height:130px;
+    position: absolute;
+    top:300px;
+    background-color: rgba(0, 0, 0, 0.137);
+    border-radius: 50px;
+    animation: shadowSmooth 2s infinite;
+}
+.pickle1{
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    width: 70px;
+    height: 70px;
+    border: 7px solid rgb(60, 250, 2);
+    border-radius: 50%;
+    position: absolute;
+    right:120px;
+    top:-35px;
+    animation: pickle1Fly 2s infinite;
+}
+.pickle2{
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    width: 70px;
+    height: 70px;
+    border: 7px solid rgb(60, 250, 2);
+    border-radius: 50%;
+    position: absolute;
+    right:210px;
+    top:-35px;
+    animation: pickle2Fly 2s infinite;
+}
+.picklein1{
+    width:10px;
+    height: 70px;
+    background-color:rgb(60, 250, 2);
+    position: absolute;
+    left:10px;
+}
+.picklein2{
+    width:10px;
+    height: 70px;
+    background-color:rgb(60, 250, 2);
+    position: absolute;
+    left:30px;
+}
+.picklein3{
+    width:10px;
+    height: 70px;
+    background-color:rgb(60, 250, 2);
+    position: absolute;
+    left:50px;
+}
+
+@keyframes burgerJump {
+  50% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes topBunFly {
+  50% {
+    transform: translateY(-200px);
+  }
+}
+
+@keyframes bottomBunFly {
+  50% {
+    transform: translateY(80px);
+  }
+}
+@keyframes shadowSmooth{
+    50%{
+        transform: translate(10px,100px);
+        width:480px;
+        height:110px;
+    }
+}
+@keyframes cheeseFly{
+    25%{
+        height: 10px;
+    }
+    50%{
+        transform: translate(0,-170px);
+    }
+}
+@keyframes onionFly{
+    50%{
+        transform: translate(0,-140px);
+    }
+}
+@keyframes tomato1Fly{
+    50%{
+        transform: translate(0,-130px);
+    }
+}@keyframes tomato2Fly{
+    50%{
+        transform: translate(0,-120px);
+    }
+}
+@keyframes pickle1Fly{
+    50%{
+        transform: translate(0,-100px);
+    }
+}
+@keyframes pickle2Fly{
+    50%{
+        transform: translate(0,-140px);
+    }
+}
+@keyframes lettuceFly{
+    50%{
+        transform: translate(0,-100px);
+    }
+}
+@keyframes pattyFly{
+    50%{
+        transform: translate(0,-30px);
+    }
+}
+@keyframes ketchupFly {
+    25%{
+        height: 40px;
+    }
+    50%{
+        top:280px;
+    }
+}
+@keyframes blink{
+    0%{
+        background-color: rgb(247, 225, 176);
+    }
 }
