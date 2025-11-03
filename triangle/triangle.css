@@ -4,6 +4,7 @@ body{
 .triangle-container{
     position: absolute;
     left:40%;
+    top:200px;
     width:500px;
     height:500px;
     background-color: gray;
