@@ -90,3 +90,23 @@ bToArr.reverse();
 let bNew=bToArr.join("");
 console.log(`Строка ${b} наоборот - ${bNew}`);
 console.log("//////////////////////////////////");
+console.log("/////////Задание 1.6//////////////");
+console.log("//////////////////////////////////");
+let arr1=[1,-2,3,-4,11];
+let arr2=arr1.map(n=>n*n);
+console.log(arr2);
+console.log("//////////////////////////////////");
+let arr3=arr2.map(n=>Math.sqrt(n));
+console.log(arr3);
+console.log("//////////////////////////////////");
+let sum=0;
+for(let i=0;i<arr1.length;i++){
+    if(arr1[i]>0)sum+=arr1[i];
+}
+console.log(sum);
+console.log("//////////////////////////////////");
+sum=0;
+for(let i=0;i<arr1.length;i++){
+    if(arr1[i]>0 && arr1<10)sum+=arr1[i];
+}
+console.log(sum);
