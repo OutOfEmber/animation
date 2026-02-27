@@ -1,4 +1,8 @@
 console.log("//////////////////////////////////");
+console.log("/////////Уровень 1//////////////");
+console.log("//////////////////////////////////");
+
+console.log("//////////////////////////////////");
 console.log("/////////Задание 1.1//////////////");
 console.log("//////////////////////////////////");
 let x=213;
@@ -110,3 +114,50 @@ for(let i=0;i<arr1.length;i++){
     if(arr1[i]>0 && arr1<10)sum+=arr1[i];
 }
 console.log(sum);
+console.log("//////////////////////////////////");
+console.log("/////////Задание 1.7//////////////");
+console.log("//////////////////////////////////");
+let str='abcde';
+arr4=str.split("");
+console.log(arr4);
+console.log("//////////////////////////////////");
+let num=12345;
+let str1=String (num);
+arr5=str1.split("");
+console.log(arr5);
+console.log("//////////////////////////////////");
+arr5.reverse();
+num2=arr5.join("");
+console.log(num2);
+console.log("//////////////////////////////////");
+let arr6=String (num).split("").reduce((sum,elem)=>sum+Number(elem),0)
+console.log(arr6);
+console.log("//////////////////////////////////");
+console.log("/////////Задание 1.8//////////////");
+console.log("//////////////////////////////////");
+let arr7=[];
+for(let i=0;i<10;i++){
+    arr7[i]=i+1;
+}
+console.log(arr7);
+console.log("//////////////////////////////////");
+let arr8=[];
+for(let i=1;i<=100;i++){
+    if(i%2==0){
+        arr8.push(i);
+    }
+}
+console.log(arr8);
+console.log("//////////////////////////////////");
+let arr9=[1.456, 2.125, 3.32, 4.1, 5.34];
+for(let i=0;i<arr9.length;i++){
+    arr9[i]=arr9[i].toFixed(1);
+}
+console.log(arr9);
+console.log("//////////////////////////////////");
+console.log("/////////Задание 1.9//////////////");
+console.log("//////////////////////////////////");
+let arr10=['http://yutub.com','string','https://youtub.com','http://notobman.com'];
+let arr11=[];
+arr11=arr10.filter(el=>el.includes('http://'))
+console.log(arr11);
