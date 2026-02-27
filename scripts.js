@@ -1,5 +1,9 @@
 console.log("//////////////////////////////////");
+console.log("//////////////////////////////////");
+console.log("//////////////////////////////////");
 console.log("/////////Уровень 1//////////////");
+console.log("//////////////////////////////////");
+console.log("//////////////////////////////////");
 console.log("//////////////////////////////////");
 
 console.log("//////////////////////////////////");
@@ -27,7 +31,7 @@ console.log("//////////////////////////////////");
 let y=String(x);
 console.log(`Первая цифра-${y[0]}`);
 console.log("//////////////////////////////////");
-console.log(`Последняя цифра-${y[y.length-1]}`);//почему если просто вписать сюда y[y.length] то пишет undefined
+console.log(`Последняя цифра-${y[y.length-1]}`);
 console.log("//////////////////////////////////");
 let z1=Number(y[0]);
 let z2=Number(y[y.length-1]);
@@ -157,7 +161,92 @@ console.log(arr9);
 console.log("//////////////////////////////////");
 console.log("/////////Задание 1.9//////////////");
 console.log("//////////////////////////////////");
-let arr10=['http://yutub.com','string','https://youtub.com','http://notobman.com'];
+let arr10=['http://yutub.com','string.html','https://youtub.com','http://notobman.com'];
 let arr11=[];
 arr11=arr10.filter(el=>el.includes('http://'))
 console.log(arr11);
+console.log("//////////////////////////////////");
+let arr12=[];
+arr12=arr10.filter(el=>el.includes('.html'))
+console.log(arr12);
+console.log("//////////////////////////////////");
+arr=[1,2,3,4,5];
+arr1=arr.map(el=>el+el*0.1);
+console.log(arr1);
+console.log("//////////////////////////////////");
+x=10;
+arr=[];
+for(let i=0;i<x;i++){
+    arr[i]=Math.round(Math.random()*100);
+}
+console.log(arr);
+console.log("//////////////////////////////////");
+console.log(num2);
+console.log("//////////////////////////////////");
+arr=[1,2,3,4,5,6]
+arr1=[];
+arr2=[];
+arr3=[];
+for(let i=0;i<arr.length;i++){
+    arr1=arr.filter((el,i)=>i<2)
+    arr2=arr.filter((el,i)=>i>=2 && i<4)
+    arr3=arr.filter((el,i)=>i>=4)
+}
+console.log(arr1);
+console.log(arr2);
+console.log(arr3);
+console.log("//////////////////////////////////");
+arr1=[1,2,3];
+arr2=[4,5,6];
+arr3=[...arr1,...arr2];
+console.log(arr3);
+
+console.log("//////////////////////////////////");
+console.log("//////////////////////////////////");
+console.log("//////////////////////////////////");
+console.log("/////////Уровень 2//////////////");
+console.log("//////////////////////////////////");
+console.log("//////////////////////////////////");
+console.log("//////////////////////////////////");
+
+console.log("//////////////////////////////////");
+console.log("/////////Задание 2.1//////////////");
+console.log("//////////////////////////////////");
+str='adlawldsda1230-asdasd';
+arr=str.split("");
+for(let i=0;i<arr.length;i++){
+    if(arr[i]==0)console.log(i);
+}
+console.log("//////////////////////////////////");
+arr=[];
+for(let i=1;i<=1000;i++){
+    arr.push(i);
+}
+arr1=arr.filter(el=>{
+    str= String(el);
+    num= Number(str[0]);
+    num1= Number(str[str.length-1]);
+    return num+num1==5;
+})
+console.log(arr1);
+console.log("//////////////////////////////////");
+x=5
+y="t"
+arr=[12,213,123,5,55,231,'t','ertret','monkey'];
+for(let i=0;i<arr.length;i++){
+   if(arr[i]==x || arr[i]==y)arr.splice(i,1); 
+}
+console.log(arr);
+console.log("//////////////////////////////////");
+arr=[1,2,3,4,5,6];
+arr1=arr.splice(0,Math.floor(arr.length/2));
+arr2=arr1.reduce((acc,el)=>acc+el,0)
+console.log(arr2);
+console.log("//////////////////////////////////");
+console.log("/////////Задание 2.2//////////////");
+console.log("//////////////////////////////////");
+arr=[]
+for(let i=0;i<10;i++){
+    arr[i]=Math.floor(Math.random()*(200/*сюда пишем диапазон чисел*/)-100/*сюда пишем минимальное значение*/);
+}
+console.log(arr);
