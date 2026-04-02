@@ -249,4 +249,75 @@ arr=[]
 for(let i=0;i<10;i++){
     arr[i]=Math.floor(Math.random()*(200/*сюда пишем диапазон чисел*/)-100/*сюда пишем минимальное значение*/);
 }
+let count=0;
+arr.forEach(el=> {
+    if(el<0)count++;
+});
+console.log(count);
+console.log("//////////////////////////////////");
 console.log(arr);
+arr.forEach((el,i)=> {
+    if(el<0)arr.splice(i,1);
+});
+console.log(arr);
+console.log("//////////////////////////////////");
+str="abvgde";
+str1=str.slice(0, -2) + str.slice(-1)
+console.log(str1)
+console.log("//////////////////////////////////");
+arr=[1,2,3,4,5,6];
+arr1=arr.splice(0,3);
+arr=[1,2,3,4,5,6];
+arr2=arr.splice(3,3);
+arr3=arr1.reduce((acc,el)=>acc+el,0);
+arr4=arr2.reduce((acc,el)=>acc+el,0);
+arr5=arr3/arr4;
+console.log(arr5);
+console.log("//////////////////////////////////");
+console.log("/////////Задание 2.3//////////////");
+console.log("//////////////////////////////////");
+str="lol"
+str1="loshka";
+if(str.substring(str.length-1,str.length) == str1.substring(0,1))console.log("da");
+else console.log("ni");
+console.log("//////////////////////////////////");
+str="10010202";
+str1=str.split("");
+count=0;
+str1.forEach((el,i)=>{
+    if(el==0)count++;
+    if(count==3){
+        console.log(i);
+        count++;}
+})
+console.log("//////////////////////////////////");
+str="12,34,56";
+str1=str.split(",");
+str2=str1.reduce((acc,el)=>acc+Number(el),0);
+console.log(str2);
+console.log("//////////////////////////////////");
+str="2022-02-24";
+str1=str.split("-");
+let obj={
+    year:'',
+    month:'',
+    day:''};
+    console.log(str1.length);
+    obj.year=str1[0];
+    obj.month=str1[1];
+    obj.day=str1[2];
+console.log(obj);
+console.log("//////////////////////////////////");
+console.log("/////////Задание 2.3//////////////");
+console.log("//////////////////////////////////");
+str='dfsfdf1v22v123v12mnv12c';
+str1=str.split("");
+count=0;
+str1.forEach((el,i)=>{
+    for(let index=0;index<=9;index++){
+        if(el==index)count++;
+    }
+    if(count==1){
+        console.log(i);
+        count++;}
+})
