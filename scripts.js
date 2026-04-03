@@ -308,7 +308,7 @@ let obj={
     obj.day=str1[2];
 console.log(obj);
 console.log("//////////////////////////////////");
-console.log("/////////Задание 2.3//////////////");
+console.log("/////////Задание 2.4//////////////");
 console.log("//////////////////////////////////");
 str='dfsfdf1v22v123v12mnv12c';
 str1=str.split("");
@@ -321,3 +321,110 @@ str1.forEach((el,i)=>{
         console.log(i);
         count++;}
 })
+console.log("//////////////////////////////////");
+obj={a:1,b:2,c:3};
+arr=Object.keys(obj);
+arr1=[obj.a,obj.b,obj.c];
+console.log(arr,arr1);
+console.log("//////////////////////////////////");
+num=123456789;
+str=String(num);
+arr=str.split("");
+count=0;
+arr.forEach(el=>{
+    if(Number(el)%2===0)count++
+})
+console.log(count);
+console.log("//////////////////////////////////");
+str="abcde";
+arr=str.split("");
+res="";
+arr.forEach((el,id)=>{
+    if(id%2==0)res+=el.toUpperCase()
+        else res+=el;
+});
+console.log(res);
+console.log("//////////////////////////////////");
+str="aaa bbb ccc";
+arr=str.split(" ");
+arr1=arr.splice(0,1).join("").split("");
+arr2=arr.splice(0,1).join("").split("");
+arr3=arr.splice(0,1).join("").split("");
+res1="";
+res2="";
+res3="";
+arr1.forEach((el,id)=>{
+    if(id===0)res1+=el.toUpperCase()
+        else res1+=el;
+})
+arr2.forEach((el,id)=>{
+    if(id===0)res2+=el.toUpperCase()
+        else res2+=el;
+})
+arr3.forEach((el,id)=>{
+    if(id===0)res3+=el.toUpperCase()
+        else res3+=el;
+})
+arr1=res1.split(" ");
+arr2=res2.split(" ");
+arr3=res3.split(" ");
+arr4=[...arr1,...arr2,...arr3];
+str1=arr4.join(" ");
+console.log(str1);
+console.log("//////////////////////////////////");
+console.log("/////////Задание 2.5//////////////");
+console.log("//////////////////////////////////");
+str='023m0df0dfg0';
+arr=str.split("");
+arr1=[];
+arr.forEach((el,id)=>{
+    if(el==0)arr1.push(id);
+})
+console.log(arr1);
+console.log("//////////////////////////////////");
+str='abcdefg';
+arr=str.split("");
+count=1;
+for (let i = 0; i < arr.length; i++,count++) {
+    if(count%3===0){
+        arr.splice(i,1);
+        count=1;
+    }
+}
+console.log(arr);
+console.log("//////////////////////////////////");
+arr=[1, 2, 3, 4, 5, 6];
+let el1=0;
+let el2=0;
+arr1=arr.map(el=>{
+    if(el%2===0)el1+=el;
+    if(el%3===0)el2+=el;
+    res=el1/el2;
+})
+console.log(res);
+console.log("//////////////////////////////////");
+console.log("/////////Задание 2.6//////////////");
+console.log("//////////////////////////////////");
+str='hs12s1dalsa'
+arr=str.split("");
+arr1=[]
+arr.forEach((el,i)=>{
+    if(el>=0 || el<=9)arr1.push(i);
+})
+console.log(arr1);
+console.log("//////////////////////////////////");
+arr=[123,456,789];
+for(let i=0;i<arr.length;i++){
+    str = String(arr[i]);
+    let tmp = str.split("");
+    tmp.reverse();
+    str = tmp.join("")
+    arr[i] = Number(str);
+}
+console.log(arr);
+console.log("//////////////////////////////////");
+str='1234567';
+str1=' ';
+for (let i = 0; i < str.length; i++) {
+    if(i%3==0);
+}
