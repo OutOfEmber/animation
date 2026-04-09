@@ -424,7 +424,168 @@ for(let i=0;i<arr.length;i++){
 console.log(arr);
 console.log("//////////////////////////////////");
 str='1234567';
-str1=' ';
+str1='';
+for (let i = str.length-1,count=0; i >=0; i--) {
+    str1=str[i]+str1;
+    count++;
+    if(count%3===0 && i>0){
+        str1=' '+str1;
+    }
+}
+console.log(str1);
+console.log("//////////////////////////////////");
+str = "AbCdE";
+str1 = str.split("");
+
+for (let i = 0; i < str1.length; i++) {
+    if (str1[i] === str1[i].toUpperCase()) {
+        str1[i] = str1[i].toLowerCase();
+    } else if (str1[i] === str1[i].toLowerCase()) {
+        str1[i] = str1[i].toUpperCase();
+    }
+}
+
+str2 = str1.join("");
+console.log(str2);
+console.log("//////////////////////////////////");
+arr=[1,2,3,4,5,6];
+for (let i = arr.length-1; i>=0; i--) {
+    if(arr[i]%2===0){
+        arr[i]=String(arr[i-1])+String(arr[i]);
+        arr[i]=Number(arr[i]);
+        arr.splice(i-1,1);
+        i--;
+    }
+
+}
+console.log(arr);
+console.log("//////////////////////////////////");
+str = 'aaa bbb ccc eee fff';
+arr = str.split(" ");
+
+for (let i = arr.length - 1; i >= 0; i--) {
+    if (i % 2 !== 0) {
+        arr1 = arr[i].split("");
+        arr1[0] = arr1[0].toUpperCase();
+        arr[i] = arr1.join("");
+    }
+}
+
+result = arr.join(" ");
+console.log(result);
+console.log("//////////////////////////////////");
+console.log("/////////Задание 2.7//////////////");
+console.log("//////////////////////////////////");
+str = 'a bc def ghij';
+arr = str.split(" ");
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length <= 3) {
+        arr[i] = arr[i].toUpperCase();
+    }
+}
+
+result = arr.join(" ");
+console.log(result);
+console.log("//////////////////////////////////");
+el="a";
+if(el===el.toLowerCase())console.log(`${el} - в нижнем регистре`);
+else console.log(`${el} - в верхнем регистре`);
+console.log("//////////////////////////////////");
+str = '123789';
+result = str.split("").filter(el => Number(el) % 2 === 0).join("");
+console.log(result); 
+console.log("//////////////////////////////////");
+console.log("/////////Задание 2.8//////////////");
+console.log("//////////////////////////////////");
+str = "Hello World JavaScript";
+
+count = 0;
 for (let i = 0; i < str.length; i++) {
-    if(i%3==0);
+    if (str[i] === str[i].toUpperCase() && str[i] !== str[i].toLowerCase()) {
+        count++;
+    }
+}
+
+if (count <= 2) {
+    console.log("В строке не более двух заглавных букв");
+} else {
+    console.log("В строке более двух заглавных букв");
+}
+console.log("//////////////////////////////////");
+str='1 22 333 4444 22 5555 1';
+result=str.split(" ").filter(el=> el.length<=3).join(" ");
+console.log(result);
+console.log("//////////////////////////////////");
+arr1 = [1, 2, 3];
+arr2 = ['a', 'b', 'c'];
+
+last = arr1.pop();
+
+arr3 = [...arr1, ...arr2, last];
+
+console.log(arr3);
+console.log("//////////////////////////////////");
+console.log("/////////Задание 2.9//////////////");
+console.log("//////////////////////////////////");
+arr=[1,2,3,4,5,6];
+sum=0;
+for (let i = arr.length-1; i>=0; i--) {
+    if(arr[i]%2===0){
+        arr[i]=String(arr[i-1])+String(arr[i]);
+        arr[i]=Number(arr[i]);
+        arr.splice(i-1,1);
+        i--;
+        sum+=arr[i];
+    }
+}
+console.log(sum);
+console.log("//////////////////////////////////");
+arr=[1, 2, 3, 4, 5];
+console.log(arr.reverse());
+console.log("//////////////////////////////////");
+console.log("/////////Задание 3.1//////////////");
+console.log("//////////////////////////////////");
+num = 12345
+str =String(num)
+result = true
+for (let i = 0; i < str.length - 1; i++) {
+    if(str[i]>str[i+1]) {
+        result = false
+    } 
+}
+if (result) {
+    console.log(num + " по возрастанию");
+}
+else {
+    console.log(num + " не по возрастанию");
+}
+console.log("//////////////////////////////////");
+arr=[1,'',2,3,'',5];
+arr.forEach((el,i)=>{
+    if(el=='')arr.splice(i,1);
+})
+console.log(arr);
+console.log("//////////////////////////////////");
+arr=[
+	[2, 1, 4, 3, 5],
+	[3, 5, 2, 4, 1],
+	[4, 3, 1, 5, 2],
+]
+for(let i=0;i<arr.length;i++){
+    arr[i].sort()
+}
+console.log(arr);
+console.log("//////////////////////////////////");
+arr1 = [1, 2, 3];
+arr2 = [1, 2, 3, 4, 5];
+for (let i = 0; i < arr2.length; i++) {
+    if(arr2.length!==arr1.length)arr2.pop();
+}
+console.log(arr1,arr2);
+console.log("//////////////////////////////////");
+console.log("/////////Задание 3.2//////////////");
+console.log("//////////////////////////////////");
+arr=[]
+for(let i=0;i<10;i++){
+    arr[i]=Math.floor(Math.random()*(1000/*сюда пишем диапазон чисел*/)-0/*сюда пишем минимальное значение*/);
 }
