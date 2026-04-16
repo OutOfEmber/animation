@@ -693,3 +693,41 @@ for (let i = 10; i <= 1000; i++) {
     }
 }
 console.log("//////////////////////////////////");
+arr=[1,2,3,4,5,6];
+for(let i=0;i<arr.length;i++){
+    if(i%2===0){
+        let tmp=arr[i];
+        arr[i]=arr[i+1];
+        arr[i+1]=tmp;
+    }
+}
+console.log(arr);
+console.log("//////////////////////////////////");
+obj = {
+	1: {
+		1: 11,
+		2: 12,
+		3: 13,
+	},
+	2: {
+		1: 21,
+		2: 22,
+		3: 23,
+	},
+	3: {
+		1: 24,
+		2: 25,
+		3: 26,
+	},
+}
+sum = 0;
+for (let i = 1; i <= 3; i++) {
+    for (let j = 1; j <= 3; j++) {
+        sum += obj[i][j];
+    }
+}
+console.log(sum);
+console.log("//////////////////////////////////");
+console.log("/////////Задание 3.5//////////////");
+console.log("//////////////////////////////////");
+str='glep cybersport of atomic heart'
