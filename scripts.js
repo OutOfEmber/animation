@@ -585,7 +585,111 @@ console.log(arr1,arr2);
 console.log("//////////////////////////////////");
 console.log("/////////Задание 3.2//////////////");
 console.log("//////////////////////////////////");
-arr=[]
-for(let i=0;i<10;i++){
-    arr[i]=Math.floor(Math.random()*(1000/*сюда пишем диапазон чисел*/)-0/*сюда пишем минимальное значение*/);
+for (let i = 10; i <= 1000; i++) {
+let a = Math.floor(i/10) % 10
+    if(a % 2 === 0){
+        console.log(i);
+        
+    }
 }
+console.log("//////////////////////////////////");
+arr = [1,2,3,4,5,6,7,8,9,0,11,12,113,15,14];
+for (let i = arr.length - 1; i >= 0; i--) {
+    if (i % 5 == 0 && i!=0) arr.splice(i, 1);
+}
+console.log(arr);
+console.log("//////////////////////////////////");
+num = 5;
+result = ""
+for (let i = 0; i < num; i++) {
+result += "0"
+}
+    console.log(result);
+console.log("//////////////////////////////////");
+str1 = 'aaa bbb ccc eee fff';
+str2 = str1.split(' ');
+str3 = [];
+for (let i = 0; i < str2.length; i++) {
+    if (i % 2 === 0) { 
+        str3.push(str2[i]);
+    }
+}
+str3 = str3.join(' ');
+console.log(str3); 
+console.log("//////////////////////////////////");
+arr1 =[
+	[1, 2, 3],
+	[4, 5, 6],
+	[7, 8, 9],
+]
+sum = 0
+for (let i = 0; i < arr1.length; i++) {
+for (let j = 0; j < arr1[i].length; j++) {
+sum += arr1[i][j];
+	}
+}
+console.log(sum);
+console.log("//////////////////////////////////");
+console.log("/////////Задание 3.3//////////////");
+console.log("//////////////////////////////////");
+str1 = ['глеп', 'пид', 'даун', 'door', 'пед', 'лошара'];
+str2 = str1.filter(word => word.length <= 3);
+console.log(str2); 
+console.log("//////////////////////////////////");
+n = 1357;
+a = true;
+while (n > 0) {
+    let m = n % 10;
+    if (m % 2 === 0) {
+        a = false;
+        break;
+    }
+    n = Math.floor(n / 10);
+}
+console.log(a);
+console.log("//////////////////////////////////");
+const word = 'abcba';
+let w = true;
+for (let i = 0; i < word.length / 2; i++) {
+    if (word[i] !== word[word.length - 1 - i]) {
+        w = false;
+        break;
+    }
+}
+console.log(w);
+console.log("//////////////////////////////////");
+arr=[
+	[
+		[11, 12, 13],
+		[14, 15, 16],
+		[17, 17, 19],
+	],
+	[
+		[21, 22, 23],
+		[24, 25, 26],
+		[27, 27, 29],
+	],
+	[
+		[31, 32, 33],
+		[34, 35, 36],
+		[37, 37, 39],
+	],
+];
+for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+        for (let k = 0; k < arr[i][j].length; k++) {
+        sum+=arr[i][j][k];
+        }   
+    }
+}
+console.log(sum);
+console.log("//////////////////////////////////");
+console.log("/////////Задание 3.4//////////////");
+console.log("//////////////////////////////////");
+for (let i = 10; i <= 1000; i++) {
+    let number = String(i)[0];
+    if (parseInt(number) % 2 === 0) {
+        console.log(i);
+    }
+}
+console.log("//////////////////////////////////");
