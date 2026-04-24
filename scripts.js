@@ -730,4 +730,178 @@ console.log(sum);
 console.log("//////////////////////////////////");
 console.log("/////////Задание 3.5//////////////");
 console.log("//////////////////////////////////");
-str='glep cybersport of atomic heart'
+str='glep arbuz cybersport of atomic heart';
+arr=str.split(" ").filter(w=>w[0]=='a')
+console.log(arr);
+console.log("//////////////////////////////////");
+arr=[1,2,3,4,5,6,7,8,9,10]
+console.log(arr.filter(num=>num%5===0));
+console.log("//////////////////////////////////");
+arr=[1,20,3,4,5,6,7,8,9,10,101];
+console.log(arr.filter(num=>num.toString().includes('0')));
+console.log("//////////////////////////////////");
+arr=[1,20,3,4,35,6,7,83,9,10,101];
+console.log(arr.filter(num=>num.toString().includes('3')));
+console.log("//////////////////////////////////");
+num=35142;
+console.log(parseInt(num.toString().split('').sort().join('')));
+console.log("//////////////////////////////////");
+str=''
+for(let i=1;i<=5;i++)str+='-'+i;
+str+='-'
+console.log(str);
+console.log("//////////////////////////////////");
+obj = {
+	1: {
+		1: {
+			1: 111,
+			2: 112,
+			3: 113,
+		},
+		2: {
+			1: 121,
+			2: 122,
+			3: 123,
+		},
+	},
+	2: {
+		1: {
+			1: 211,
+			2: 212,
+			3: 213,
+		},
+		2: {
+			1: 221,
+			2: 222,
+			3: 223,
+		},
+	},
+	3: {
+		1: {
+			1: 311,
+			2: 312,
+			3: 313,
+		},
+		2: {
+			1: 321,
+			2: 322,
+			3: 323,
+		},
+	},
+}
+sum = 0;
+for(let k in obj){
+    for(let sk in obj[k]){
+        for(let ssk in obj[k][sk]){
+            sum+=obj[k][sk][ssk];
+        }
+    }
+}
+console.log(sum);
+console.log("//////////////////////////////////");
+console.log("/////////Задание 3.6//////////////");
+console.log("//////////////////////////////////");
+arr=[123,23,1234];
+console.log(arr.filter(num=>num.toString().length<=3));
+console.log("//////////////////////////////////");
+num=12345;
+console.log(num.toString().split('').every(num=>parseInt(num)>0))
+console.log("//////////////////////////////////");
+arr=[123,456,789];
+console.log(arr.join("").split("").map(Number));
+console.log("//////////////////////////////////");
+let data = [
+	{
+		1: 11,
+		2: 12,
+		3: 13,
+	},
+	{
+		1: 21,
+		2: 22,
+		3: 23,
+	},
+	{
+		1: 24,
+		2: 25,
+		3: 26,
+	},
+];
+sum=data.reduce((acc,el)=>acc+Object.values(el).reduce((acc2,values)=>acc2+values,0),0);
+console.log(sum);
+console.log("//////////////////////////////////");
+console.log("/////////Задание 3.7//////////////");
+console.log("//////////////////////////////////");
+str='abv gcd efg Alo';
+console.log(str.split(' ').sort().join(' '));
+console.log("//////////////////////////////////");
+num = 12;
+arr = [];
+for(let i=1; i<=num; i++) 
+if(num % i === 0) {
+    arr.push(i);
+}
+console.log(arr);
+console.log("//////////////////////////////////");
+num1=12;
+num2=6;
+arr=[];
+for (let i = 0 ,j=0; i < num1, j<num2; i++,j++) {
+    if(num1%i===0 && num1%j===0)arr.push(i)
+}
+console.log(arr);
+console.log("//////////////////////////////////");
+num = 8;
+arr = [];
+for(let i=2; i<num; i++) 
+if(num % i === 0) {
+    arr.push(i);
+}
+console.log(arr.length === 1);
+console.log("//////////////////////////////////");
+str='12,34,56';
+console.log(Math.max(...str.split(',').map(Number)));
+console.log("//////////////////////////////////");
+arr=[1,23,45,6];
+console.log("//////////////////////////////////");
+arr = [1,12,3,45,6];
+arr1 = [];
+arr.forEach(n => { arr1.push(n); if(n<10) arr1.push(n); });
+console.log(arr1);
+console.log("//////////////////////////////////");
+str = 'hello world';
+console.log(str.replace(/[eo]/gi, ''));
+console.log("//////////////////////////////////");
+str = 'hello world';
+console.log(str.split(' ').map(w => w.slice(0,-1) + w.slice(-1).toUpperCase()).join(' '));
+console.log("//////////////////////////////////");
+data = [
+	{
+		1: [1, 2, 3],
+		2: [1, 2, 3],
+		3: [1, 2, 3],
+	},
+	{
+		1: [1, 2, 3],
+		2: [1, 2, 3],
+		3: [1, 2, 3],
+	},
+	{
+		1: [1, 2, 3],
+		2: [1, 2, 3],
+		3: [1, 2, 3],
+	},
+];
+sum=data.reduce((acc,el)=>acc+Object.values(el).reduce((acc2,el1)=>acc2+Object.values(el1).reduce((acc3,el2)=>acc3+el2,0),0),0);
+console.log(sum);
+console.log("//////////////////////////////////");
+console.log("/////////Задание 3.8//////////////");
+console.log("//////////////////////////////////");
+arr=[323,3123,3451]
+console.log(arr.every(n => n.toString().includes('3')));
+console.log("//////////////////////////////////");
+let mas = 'kebab-case';
+console.log(mas.replace(/-/g, '_'));
+console.log("//////////////////////////////////");
+mas = 'snake_case';
+console.log(mas.replace(/_([a-z])/g, (_, l) => l.toUpperCase()));
